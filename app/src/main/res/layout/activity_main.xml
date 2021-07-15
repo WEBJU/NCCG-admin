@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="@dimen/logo_w_h"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/download"
+            android:layout_height="@dimen/logo_w_h"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="NCCG  Parking Spots report"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"/>
+        <com.github.mikephil.charting.charts.LineChart
+            android:layout_width="match_parent"
+            android:id="@+id/reportingChart"
+            android:background="@color/white"
+            android:elevation="10dp"
+            android:layout_height="400dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

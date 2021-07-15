@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/add_geofence"
+
+        android:title="Add geofence"/>
+
+    <item android:id="@+id/delete_geofence"
+        android:title="Registered geofences"/>
+    <item android:id="@+id/parking_slot"
+        android:title="Add new parking"/>
+    <item android:id="@+id/reports"
+        android:title="View parking reports"/>
+    <item android:id="@+id/logout"
+        android:title="Logout"/>
+</menu>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="@dimen/logo_w_h"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/download"
+            android:layout_height="@dimen/logo_w_h"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Administrator Login"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/email"
+                android:hint="@string/hint_email"
+                android:background="@drawable/edt_input"
+                android:layout_marginBottom="20dp"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/password"
+                android:hint="@string/hint_password"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edt_input"
+                android:inputType="textPassword"
+                android:imeOptions="actionUnspecified"
+                android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/btn_login"
+            style="?android:textAppearanceSmall"
+            android:text="@string/btn_login"
+            android:background="@drawable/btn_bg"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/btn_reset_password"
+            android:text="@string/btn_forgot_password"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="16dp"
+            android:background="@null"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"/>
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:id="@+id/progressBar"
+            android:layout_gravity="center|bottom"
+            android:visibility="gone"
+            android:layout_marginBottom="20dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
